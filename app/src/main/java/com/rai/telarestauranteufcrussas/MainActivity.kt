@@ -60,7 +60,8 @@ fun Restaurante() {
     var soma by remember {
         mutableDoubleStateOf(12.50)
     }
-
+    // usei o column para organizar títulos e descrições na vertical
+    // usei o padding no column para que houvesse um espaçamento.
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -115,6 +116,7 @@ fun Restaurante() {
 
         Spacer(modifier = Modifier.height(20.dp))
 
+        // utilizei o Row para que os botões fossem organizado na horizontal
         Row(
             verticalAlignment = Alignment.CenterVertically
         ) {
